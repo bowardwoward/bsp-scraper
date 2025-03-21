@@ -72,6 +72,7 @@ export class BspIssuanceScraper {
         const response = await axios.get<ApiResponse>(url, {
           headers: {
             'Accept': 'application/json',
+            "ngrok-skip-browser-warning": "69420",
             'Content-Type': 'application/json;odata=verbose;charset=utf-8'
           }
         });
